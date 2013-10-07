@@ -113,7 +113,7 @@ Launches an Amazon EC2 instance of the given AMI, connects to it via SSH
 and creates a tunnel to the Docker daemon. Note that ```securityGroups```
 must contain a group that allows inbound access to ```ssh.port```.
 
-The AMI must be running Linux 3.8 or above, and have an SSH and Docker daemon
+The AMI must be running Linux 3.8 or above, and have an SSH, a Docker daemon, and socat
 installed and configured. We created ```ami-53aef83a``` on us-east-1 that you
 can use for now.
 
