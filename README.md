@@ -112,7 +112,8 @@ and creates a tunnel to the Docker daemon. Note that ```securityGroups```
 must contain a group that allows inbound access to ```ssh.port```.
 
 The AMI must be running Linux 3.8 or above, and have an SSH and Docker daemon
-installed and configured.
+installed and configured. We created ```ami-53aef83a``` on us-east-1 that you
+can use for now.
 
 ### Class: Server
 
