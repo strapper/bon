@@ -1,0 +1,26 @@
+{
+  "name":        "shipper",
+  "version":     "0.1.0",
+  "author":      "Gerald Monaco",
+  "description": "Scriptable deployment for Docker containers.",
+  "keywords":    [ "docker", "amazon", "cloud", "deploy" ],
+  "license":     "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/strapper/shipper.git"
+  },
+  "bin": {
+    "ship": "./bin/ship"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "dependencies": {
+    "commander":     "2.0.x",
+    "request":       "2.27.x",
+    "coffee-script": "1.6.x",
+    "aws-sdk":       "1.7.x",
+    "ssh2":          "0.2.x",
+    "pork":          "0.1.x"
+  }
+}
