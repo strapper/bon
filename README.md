@@ -32,8 +32,8 @@ running:
 ### Shipfiles
 
 Shipfiles are standalone scripts for deploying your servers and applications.
-Simply create a file named ```Shipfile``` and run ```ship``` from the terminal.
-Shipfiles are written in CoffeeScript.
+They are little more than scripts written in CoffeeScript and executed with a
+global ```ship(name, [description], action)``` function to define available actions.
 
 #### Shipfile
 
@@ -59,6 +59,8 @@ ship 'release', ->
     server.start 'docker_image.tar', ['echo', 'hello world'], (err) ->
       console.log "upload: #{err}"
 ````
+
+Then execute ```ship release``` from a terminal to deploy.
 
 ### Library
 
@@ -129,6 +131,13 @@ to create a new Server instance.
 
 The specified image will be uploaded to the server, and a new container will
 be created and started.
+
+## Planned Features
+
+* Stop for Applications and Containers
+* RESTful API (+ an HTML dashboard)
+* More providers (e.g. Vagrant, Docker)
+* Faster container distribution (e.g. better compression, torrents)
 
 ## License
 
