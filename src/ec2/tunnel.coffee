@@ -15,9 +15,6 @@ class EC2Tunnel
         createServer()
 
       server.listen port, '127.0.0.1', =>
-        # Don't let the server keep the event loop open.
-        server.unref()
-        
         callback? null, "http://127.0.0.1:#{port}"
 
     createServer()
