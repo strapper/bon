@@ -1,6 +1,6 @@
 # shipper
 
-Shipper is scriptable deployment for Docker containers.
+Shipper is scripted deployment for Docker containers.
 
 ## Overview
 
@@ -12,9 +12,6 @@ container.
 Once you follow this abstraction, deploying and scaling your stack becomes
 incredibly simple. Instead of baking and deploying machine images like AMIs,
 you can just deploy an application to any running server.
-
-Need another web server to handle an influx of requests in Japan? Just
-```boot``` a new server and ```start``` your ```server.tar```.
 
 ## Installation
 
